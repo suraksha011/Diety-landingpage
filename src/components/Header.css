@@ -1,0 +1,44 @@
+/* Header Section Styling */
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    padding: 5px 15px; /* Reduce padding for a smaller header */
+    background-color: #f5f5f5; /* Background color for header */
+    border-bottom: 2px solid #00422E; /* Add a subtle border for distinction */
+}
+
+.logo {
+    width: 100px; /* Adjust logo size to be smaller */
+    height: 50px;
+    margin-right: 15px; /* Reduce spacing between logo and navbar */
+    margin-left: 50px;
+}
+
+/* Responsive Design for Different Screen Sizes */
+@media (max-width: 768px) {
+    .header-container {
+        padding: 5px 10px; /* Further reduce padding on medium screens */
+        height: 60px; /* Adjust header height for smaller screens */
+    }
+
+    .logo {
+        width: 80px; /* Make the logo slightly smaller */
+        margin-left: 20px; /* Adjust left margin for better alignment */
+    }
+}
+
+@media (max-width: 480px) {
+    .header-container {
+        flex-direction: column; /* Stack logo and navbar vertically on smaller screens */
+        height: auto; /* Allow header to expand for vertical stacking */
+        padding: 10px 5px; /* Adjust padding to fit mobile screens */
+    }
+
+    .logo {
+        width: 70px; /* Make logo smaller for mobile screens */
+        margin-left: 0; /* Remove left margin */
+        margin-bottom: 10px; /* Add margin between logo and navbar */
+    }
+}

@@ -1,0 +1,105 @@
+.join-us-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    gap: 10px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+.join-us-box {
+    text-align: center;
+}
+
+.journey-title h3 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.role-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+}
+
+.role-box {
+    background-color: #bdecc9;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 200px;
+    margin: 10px; /* Add spacing between boxes */
+}
+
+.role-box h4 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+.handshake {
+    font-size: 3rem;
+    display: inline-block;
+    margin-top: 5px;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+
+.beat {
+    animation: beat-animation 0.1s ease-in-out 11 times;
+}
+
+@keyframes beat-animation {
+    0% { transform: scale(1); }
+    10% { transform: scale(1.1); }
+    20% { transform: scale(1); }
+    30% { transform: scale(1.1); }
+    40% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    60% { transform: scale(1); }
+    70% { transform: scale(1.1); }
+    80% { transform: scale(1); }
+    90% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .join-us-container {
+        padding: 20px;
+    }
+
+    .journey-title h3 {
+        font-size: 1.5rem;
+    }
+
+    .role-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .role-box {
+        width: 80%; /* Make boxes full width on smaller screens */
+        padding: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .journey-title h3 {
+        font-size: 1.2rem;
+    }
+
+    .role-box {
+        width: 90%; /* Further adjust width on very small screens */
+        padding: 15px;
+    }
+
+    .handshake {
+        font-size: 2.5rem; /* Reduce emoji size on small screens */
+    }
+}
