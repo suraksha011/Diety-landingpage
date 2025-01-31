@@ -4,10 +4,10 @@ import "./Home.css";
 
 const Home = () => {
     const banners = [
-        "/Banner1.png",
-        "/Banner2.jpg",
-        "/Banner3.jpg",
-        "/Banner4.png",
+        `${process.env.PUBLIC_URL}/Banner1.png`,
+        `${process.env.PUBLIC_URL}/Banner2.jpg`,
+        `${process.env.PUBLIC_URL}/Banner3.jpg`,
+        `${process.env.PUBLIC_URL}/Banner4.png`,
     ];
 
     const [currentBanner, setCurrentBanner] = useState(0);
@@ -15,7 +15,7 @@ const Home = () => {
     useEffect(() => {
         const bannerInterval = setInterval(() => {
             setCurrentBanner((prevBanner) => (prevBanner + 1) % banners.length);
-        }, 5000); // Change banner every 3 seconds
+        }, 5000); // Change banner every 5 seconds
 
         return () => clearInterval(bannerInterval); // Clean up on unmount
     }, [banners.length]);
