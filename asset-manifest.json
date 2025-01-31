@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/Diety-landingpage/static/css/main.b1a86782.css",
-    "main.js": "/Diety-landingpage/static/js/main.8e2b648e.js",
+    "main.js": "/Diety-landingpage/static/js/main.2f1798c9.js",
     "static/js/453.cdb15da9.chunk.js": "/Diety-landingpage/static/js/453.cdb15da9.chunk.js",
     "index.html": "/Diety-landingpage/index.html",
     "main.b1a86782.css.map": "/Diety-landingpage/static/css/main.b1a86782.css.map",
-    "main.8e2b648e.js.map": "/Diety-landingpage/static/js/main.8e2b648e.js.map",
+    "main.2f1798c9.js.map": "/Diety-landingpage/static/js/main.2f1798c9.js.map",
     "453.cdb15da9.chunk.js.map": "/Diety-landingpage/static/js/453.cdb15da9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.b1a86782.css",
-    "static/js/main.8e2b648e.js"
+    "static/js/main.2f1798c9.js"
   ]
 }
