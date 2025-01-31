@@ -1,16 +1,25 @@
 import React from "react";
-import Navbar from "./Navbar"; // Import Navbar for placing beside the logo
+import { Link } from "react-router-dom";
 import "./Header.css";
 
 const Header = () => {
     return (
-        <header className="header-container">
-            <img
-                src={"/Logo_new.png"}
-                alt="DIETY Logo"
-                className="logo"
-            />
-            <Navbar /> {/* Place the Navbar beside the logo */}
+        <header className="header">
+            <div className="logo">
+                {/* Update the logo src path */}
+                <img
+                    src={`${process.env.PUBLIC_URL}/logo.png`}  // Use process.env.PUBLIC_URL
+                    alt="DIETY Logo"
+                    className="logo-image"
+                />
+            </div>
+            <nav>
+                <ul>
+                    <li><Link to="/">Home</Link></li>
+                    <li><Link to="/aboutus">About Us</Link></li>
+                    <li><Link to="/contact">Contact</Link></li>
+                </ul>
+            </nav>
         </header>
     );
 };
