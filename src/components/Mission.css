@@ -1,0 +1,61 @@
+.mission {
+  padding: 50px 20px;
+  text-align: center;
+  background-color: #ffffff;
+}
+
+.mission h2 {
+  color: #00563B;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.mission ul {
+  list-style: none;
+  padding: 0;
+  max-width: 600px;
+  margin: 0 auto;
+  color: #333;
+  font-size: 1.1rem;
+}
+
+.mission li {
+  margin: 10px 0;
+  padding: 10px;
+  background-color: #f8f9fa;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .mission h2 {
+      font-size: 1.6rem; /* Adjust heading font size */
+  }
+
+  .mission ul {
+      padding: 0 10px;
+      font-size: 1rem; /* Adjust font size for smaller screens */
+      max-width: 100%; /* Ensure list takes full width */
+  }
+
+  .mission li {
+      font-size: 1rem; /* Adjust list item font size */
+      padding: 8px; /* Adjust padding for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .mission h2 {
+      font-size: 1.4rem; /* Further reduce font size */
+  }
+
+  .mission ul {
+      padding: 0 5px;
+      font-size: 0.95rem; /* Reduce font size more on very small screens */
+  }
+
+  .mission li {
+      padding: 6px; /* Further adjust padding */
+  }
+}
